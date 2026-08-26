@@ -38,3 +38,7 @@ My passion for building high-polish, delightful devtools is informed by my backg
     </tr>
   </tbody>
 </table>
+
+<a href="https://musicplayer-two-vert.vercel.app/api/now-playing?open">
+    <img src="https://musicplayer-two-vert.vercel.app/api/now-playing" width="256" height="64" alt="Now Playing">`
+</a>
