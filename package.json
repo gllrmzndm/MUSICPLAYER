@@ -34,10 +34,5 @@
   "homepage": "https://github.com/natemoo-re/natemoo-re#readme",
   "volta": {
     "node": "22.22.0"
-  },
-  "pnpm": {
-    "allowedBuildScripts": [
-      "esbuild"
-    ]
   }
 }
