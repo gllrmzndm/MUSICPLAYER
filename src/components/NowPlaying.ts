@@ -100,7 +100,7 @@ const css = `
     max-width: 360px;
     height: 4px;
     margin: -1px;
-    border: 1px solid #e1e4e8;
+    border: 2px solid #ff00b7;
     border-radius: 4px;
     overflow: hidden;
     padding: 2px;
@@ -114,7 +114,7 @@ const css = `
     width: 100%;
     height: 6px;
     transform-origin: left center;
-    background-color: #24292e;
+    background-color: #00f4ff;
     animation: progress calc(var(--duration) * 1ms) linear;
     animation-delay: calc(var(--progress) * -1ms);
   }

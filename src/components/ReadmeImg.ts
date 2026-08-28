@@ -1,4 +1,4 @@
-import {html} from "htm/preact";
+import { html } from "htm/preact";
 
 const ReadmeImg = ({ width, height, children }) => {
   return html`
@@ -11,12 +11,14 @@ const ReadmeImg = ({ width, height, children }) => {
     >
       <foreignObject width="${width}" height="${height}">
         <div xmlns="http://www.w3.org/1999/xhtml">
-          <style>${css}</style>
+          <style>
+            ${css}
+          </style>
           ${children}
         </div>
       </foreignObject>
     </svg>
-  `
+  `;
 };
 const css = `
   * {
@@ -25,7 +27,7 @@ const css = `
   }
   :root {
     color: rgb(36, 41, 46);
-    background: #FFF;
+    /* background: #FFF; */
   }
 
   @media (prefers-color-scheme: dark) {
@@ -38,6 +40,6 @@ const css = `
       color: inherit !important;
     }
   }
-`
+`;
 
 export default ReadmeImg;
