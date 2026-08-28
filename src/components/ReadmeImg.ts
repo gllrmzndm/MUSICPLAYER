@@ -32,8 +32,8 @@ const css = `
 
   @media (prefers-color-scheme: dark) {
     :root {
-      color: rgb(201, 209, 217);
-      background: rgb(13, 17, 23);
+      /* color: rgb(201, 209, 217);*/
+      /*background: rgb(13, 17, 23);*/
     }
 
     p {
