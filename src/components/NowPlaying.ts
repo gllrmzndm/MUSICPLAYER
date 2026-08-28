@@ -53,7 +53,7 @@ export const Player = ({
           <${Text} id="track" weight="bold">
             ${track ?? ""}
           </${Text}>
-          <${Text} id="artist" color="${!track ? "gray" : undefined}">
+          <${Text} id="artist" color="${!track ? "gray-light" : undefined}">
             ${artist ?? "Nothing playing..."}
           </${Text}>
           ${

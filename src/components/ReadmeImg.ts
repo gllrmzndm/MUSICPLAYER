@@ -29,6 +29,17 @@ const css = `
     color: rgb(36, 41, 46);
     /* background: #FFF; */
   }
+/* Light mode shows text in light too */
+    @media (prefers-color-scheme: light) {
+    :root {
+       color: rgb(201, 209, 217);
+      /*background: rgb(13, 17, 23);*/
+    }
+
+    p {
+      color: inherit !important;
+    }
+  }
 
   @media (prefers-color-scheme: dark) {
     :root {
