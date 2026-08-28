@@ -1,4 +1,4 @@
-import { html } from 'htm/preact';
+import { html } from "htm/preact";
 import ReadmeImg from "./ReadmeImg.ts";
 import Text from "./Text.ts";
 
@@ -23,7 +23,7 @@ export const Player = ({
     <${ReadmeImg} width="540" height="64">
       <style>${css}</style>
       <div
-        class="${isPlaying ? 'disabled' : 'active'}"
+        class="${isPlaying ? "disabled" : "active"}"
         style=${{
           "--duration": duration,
           "--progress": progress,
@@ -38,7 +38,7 @@ export const Player = ({
           size="large"
           weight="bold"
         >
-          ${isPlaying ? "▶" : ""}
+          ${isPlaying ? "" : ""}
         </${Text}>
         <img id="cover" src="${cover ?? undefined}" width="48" height="48" />
         <div
@@ -51,16 +51,23 @@ export const Player = ({
           }}
         >
           <${Text} id="track" weight="bold">
-            ${track ?? ''}
+            ${track ?? ""}
           </${Text}>
           <${Text} id="artist" color="${!track ? "gray" : undefined}">
             ${artist ?? "Nothing playing..."}
           </${Text}>
-          ${track ? html`
-            <div class="progress-bar">
-              <div id="progress" class="${isPlaying ? "playing" : "paused"}" />
-            </div>
-          ` : ''}
+          ${
+            track
+              ? html`
+                  <div class="progress-bar">
+                    <div
+                      id="progress"
+                      class="${isPlaying ? "playing" : "paused"}"
+                    />
+                  </div>
+                `
+              : ""
+          }
         </div>
       </div>
     </${ReadmeImg}>
@@ -132,4 +139,4 @@ const css = `
       transform: scaleX(1)
     }
   }
-`
+`;
